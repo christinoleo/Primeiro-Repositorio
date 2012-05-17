@@ -14,6 +14,7 @@ public class HelloWorld {
 	 */
 	public static void main(String[] args) {
 		Funcionario f = new Funcionario();
+		BasicJDBCDemo demo;
 
 		try {
 			f.aumentaSalario(-10);
@@ -31,6 +32,10 @@ public class HelloWorld {
 		}
 		funcionario.stop();
 		System.out.println(f.getSalario());
+
+		demo = new BasicJDBCDemo();
 	}
+	
+
 
 }
